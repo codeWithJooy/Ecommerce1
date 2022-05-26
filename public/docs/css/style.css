@@ -28,7 +28,7 @@
     position:relative;
     width:100%;
     max-width:1024px;
-    padding:20px 10px;
+    padding:5px 15px 10px;
     font-size: 15px;
     font-family: regular;
 }
@@ -101,7 +101,7 @@ img.sidebar_close{
 ===========================================================*/
 .homescroll{
     max-width:100%;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .homescroll_unit{
     width:100%;
@@ -125,12 +125,12 @@ img.sidebar_close{
 
 .scroll_buttons{
     width:100%;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 .scroll_button_unit{
     width:100%;
     padding:0px 5px;
-    height:35px;
+    min-height:35px;
 }
 .scroll_button_card{
     position: relative;
@@ -140,16 +140,28 @@ img.sidebar_close{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border:1px solid lightgrey;
+    
     font-size: 12px;
     font-family: bold;
     padding:7px 5px;
 }
-
-.active_button{
-    background-color: black;
-    color:white;
+.scroll_button_card img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
 }
+.scroll_button_card p{
+    width:100%;
+}
+.scroll_button_text{
+    margin-top: 10px;
+    width:100%;
+    text-align: center;
+    font-family:regular;
+    font-size:14px;
+    
+}
+
 .scroll_image{
     width:100%;
     margin-top: 10px;
@@ -545,4 +557,40 @@ img.sidebar_close{
 }
 /*==========================================================
              Cart Page Ends HereI
+===========================================================*/
+/*==========================================================
+             Footer Starts Here
+===========================================================*/
+.footer{
+    width:100%;
+    min-height:50px;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    padding:10px 10px;
+    background: white;
+    box-shadow: 0 0 5px lightgray;
+}
+.footer_container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer_unit{
+    width:25%;
+    padding:2px;
+}
+.footer_unit img{
+    width:18px;
+    height:18px;
+    margin-left: calc(50% - 9px);
+}
+.footer_unit_text{
+    width:100%;
+    text-align: center;
+    font-size:11px;
+}
+/*==========================================================
+             Footer Ends Here
 ===========================================================*/

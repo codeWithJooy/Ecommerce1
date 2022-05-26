@@ -16,24 +16,47 @@ const ScrollButtons=()=>{
             <Slider {...setting}>
                 <div className="scroll_button_unit">
                   <div className="scroll_button_card active_button">
-                      <p>All</p>
+                      <img src="docs/img/icons/category.png" />
+                      <div className="scroll_button_text">
+                          <p>Category</p>
+                      </div>
                   </div>
                 </div>
                 <div className="scroll_button_unit">
-                  <div className="scroll_button_card">
-                      <p>Saree</p>
+                  <div className="scroll_button_card active_button">
+                      <img src="docs/img/suit1.jpg" />
+                      <div className="scroll_button_text">
+                          <p>Suits</p>
+                      </div>
                   </div>
                 </div>
                 <div className="scroll_button_unit">
-                  <div className="scroll_button_card">
-                      <p>Salwar</p>
+                  <div className="scroll_button_card active_button">
+                      <img src="docs/img/potli1.jpg" />
+                      <div className="scroll_button_text">
+                          <p>Potli</p>
+                      </div>
                   </div>
                 </div>
                 <div className="scroll_button_unit">
-                  <div className="scroll_button_card">
-                      <p>Dress</p>
+                  <div className="scroll_button_card active_button">
+                      <img src="docs/img/kurta1.jpg" />
+                      <div className="scroll_button_text">
+                          <p>Kurtas</p>
+                      </div>
                   </div>
                 </div>
+                <div className="scroll_button_unit">
+                  <div className="scroll_button_card active_button">
+                      <img src="docs/img/shirt1.jpg" />
+                      <div className="scroll_button_text">
+                          <p>Shirts</p>
+                      </div>
+                  </div>
+                </div>
+                
+                
+                
 
             </Slider>
         </div>

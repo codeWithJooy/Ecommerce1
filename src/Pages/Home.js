@@ -5,6 +5,7 @@ import HomeScroll from '../Components/Home/HomeScroll'
 import ScrollButtons from '../Components/Home/ScrollButtons'
 import ScrollImage from '../Components/Home/ScrollImage'
 import Sidebar from '../Components/Sidebar'
+import Footer from '../Components/Footer'
 const Home= () =>{
     return(
         <div className="main">
@@ -16,7 +17,7 @@ const Home= () =>{
              <ScrollButtons />
              <ScrollImage />
              <HomeRecommend />
-
+             <Footer />
           </div>
         </div>
     )
