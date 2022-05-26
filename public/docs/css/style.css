@@ -1,0 +1,548 @@
+/* @font-face{
+    font-family:regular;
+    src:url('../fonts/Monteserrat/static/Montserrat-Regular.ttf');
+} */
+@font-face{
+    font-family:regular;
+    src:url('../fonts/Sen/Sen-Regular.ttf')
+}
+@font-face{
+    font-family:bold;
+    src:url('../fonts/Sen/Sen-Bold.ttf');
+}
+
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: height 1.5em;
+}
+.container{
+    position:relative;
+    width:100%;
+    max-width:1024px;
+    padding:20px 10px;
+    font-size: 15px;
+    font-family: regular;
+}
+.scrollbar{
+    display:none;
+    position: fixed;
+    top:30px;
+    left:0px;
+    width:200px;
+    min-height:90vh;
+    background-color: red;
+    z-index:100;
+    padding:10px 15px;
+}
+.open{
+    display: block;
+}
+img.sidebar_close{
+    width:16px;
+    height:16px;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+/*==========================================================
+                       Header Section Starts Here
+===========================================================*/
+.header{
+    width:100%;
+    height:40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hamburger{
+    width:10%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.hamburger img{
+    width:18px;
+    height:18px;
+}
+.header_title{
+    width:70%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+.header_extra{
+    width:10%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.header_extra img{
+    width:16px;
+    height:16px;
+}
+/*==========================================================
+                Header Section Ends Here
+===========================================================*/
+/*==========================================================
+                Home Section starts Here
+===========================================================*/
+.homescroll{
+    max-width:100%;
+    margin-top: 20px;
+}
+.homescroll_unit{
+    width:100%;
+    padding:0px 5px;
+    height:180px;
+}
+.scroll_card{
+    position:relative;
+    width:100%;
+ 
+}
+.scroll_card img{
+    position: absolute;
+    left: 0px;
+    right:0px;
+    height:180px;
+    width:100%;
+    z-index:0;
+    border-radius:10px!important;
+}
+
+.scroll_buttons{
+    width:100%;
+    margin-top: 35px;
+}
+.scroll_button_unit{
+    width:100%;
+    padding:0px 5px;
+    height:35px;
+}
+.scroll_button_card{
+    position: relative;
+    width:100%;
+    border-radius:15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border:1px solid lightgrey;
+    font-size: 12px;
+    font-family: bold;
+    padding:7px 5px;
+}
+
+.active_button{
+    background-color: black;
+    color:white;
+}
+.scroll_image{
+    width:100%;
+    margin-top: 10px;
+}
+.scroll_image_unit{
+    width:100%;
+    padding:0px 5px;
+    height:250px;
+    
+}
+.scroll_main_img img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.scroll_image_card{
+    width:100%;
+    height:250px;
+    position: relative;
+}
+.scroll_main_img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:250px;
+    width:100%;
+    z-index:0;
+    border-radius:10px!important;
+}
+.like_heart{
+    position: absolute;
+    right:10px;
+    top:10px;
+    z-index: 2;
+}
+.like_heart img{
+    z-index:2;
+    height:25px;
+    width:25px;
+}
+.scroll_image_data{
+    width:90%;
+    margin-left: 5%;
+    position: absolute;
+    bottom:20px;
+    left:0px;
+    z-index: 55;
+    color:white;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+}
+.scroll_image_data h4,h5{
+    color:black;
+}
+.scroll_image_data h4{
+    font-weight: bold;
+    font-family: bold;
+}
+.view_more{
+    width:20%;
+    height:20px;
+    margin-left:70%;
+    margin-top: 10px;
+}
+.view_more p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.homeRecommend{
+    width:100%;
+    padding:20px 0px 10px;
+}
+.recommendHeader{
+    width:100%;
+    height:20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: bold;
+    margin-bottom: 20px;
+}
+.reco_unit{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.reco_image{
+    width:30%;
+    padding:5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  
+}
+.reco_image img{
+    width:1000px;
+    height:120px;
+    border-radius: 10px;
+}
+.reco_des{
+    width:70%;
+    padding:5px;
+}
+.reco_title{
+    width:100%;
+    height:30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: bold;
+ 
+}
+.reco_description{
+    width:100%;
+    height:45px;
+    margin-top:5px;
+    font-size: 11px;
+    overflow: hidden;
+}
+.reco_meta{
+  width:100%;
+  height:30px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.reco_price{
+    width:60%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.reco_view{
+    width:40%;
+    font-size: 12px;
+    text-decoration: underline;
+}
+/*==========================================================
+                Home Section Ends Here
+===========================================================*/
+/*==========================================================
+             Item Display Section Starts Here
+===========================================================*/
+.display_section{
+    width:100%;
+}
+.display_unit{
+    width:100%;
+    padding:5px 10px;
+    height:210px;
+}
+.display_card{
+    width:100%;
+    position:relative;
+}
+.display_card img{
+    width:100%;
+    height:200px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+}
+.item_name{
+    width:100%;
+    min-height:20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:bold;
+    text-align: left;
+    padding:5px 10px;
+}
+.item_price{
+    width:100px;
+    min-width: 15px;
+    padding:5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.item_size{
+    width:100%;
+    min-height: 20px;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.item_unit_title{
+    width:100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: bold;
+}
+.size_unit{
+    width:30px;
+    height:25px;
+    border:1px solid lightgray;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.item_description{
+    width:100%;
+    min-height: 50px;
+    padding:5px 10px;
+    font-size: 13px;
+}
+.cart_button{
+    position: fixed;
+    bottom:20px;
+    left:0px;
+    width:100%;
+    padding:5px 10px;
+}
+.cart_button button{
+    width:100%;
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*==========================================================
+             Item Display Section Ends Here
+===========================================================*/
+
+/*==========================================================
+             Category Page Starts Here
+===========================================================*/
+.category_container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.category_unit{
+    width:48%;
+    position:relative;
+    min-height:200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.category_unit img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: 0;
+    border-radius: 20px;
+}
+.category_unit_name{
+    position: absolute;
+    bottom:20px;
+    left:0px;
+    width:100%;
+    min-height:20px;
+    padding:5px 10px;
+    z-index: 20;
+    text-align: center;
+
+}
+.category_unit_name p.cat_title{
+    font-size:14px;
+    font-weight: bold;
+    font-family: bold;
+    color:white;
+    z-index: 20;
+}
+.category_unit_name p.cat_price{
+    font-size:12px;
+    font-weight: bold;
+    font-family: bold;
+    color:white;
+    z-index: 20;
+    margin-top: 10px;
+}
+.img_like{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width:20px;
+    height:20px;
+}
+.img_like img{
+    width:100%;
+    height:100%;
+    z-index: 20;
+}
+/*==========================================================
+             Category Page Ends HereI
+===========================================================*/
+/*==========================================================
+             Cart Page Starts HereI
+===========================================================*/
+.cart_unit_container{
+    width:100%;
+    min-width: 20px;
+    padding:10px 0px;
+    margin-top: 10px;
+}
+
+.cart_unit{
+   width:100%;
+   min-height: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.cart_unit_img{
+    width:40%;
+    height:120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+
+}
+.cart_unit_img img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+
+}
+.cart_unit_details{
+    width:60%;
+    padding:0px 10px;
+}
+.cart_unit_title{
+    width:100%;
+    min-height:20px;
+    padding-bottom: 10px;
+}
+.cart_unit_title p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: bold;
+}
+.cart_unit_rate{
+    width:100%;
+    height:20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: bold;
+}
+.cart_unit_quantity{
+    width:100%;
+    min-height:20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.cart_quantity_handle{
+    width:20px;
+    height:20px;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.cart_quantity_handle p{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: bold;
+}
+.cart_quantity_holder{
+    width:20px;
+    height:20px;
+    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.cart_quantity_holder p{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: bold;
+}
+/*==========================================================
+             Cart Page Ends HereI
+===========================================================*/
